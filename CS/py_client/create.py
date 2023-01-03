@@ -1,0 +1,10 @@
+import  requests
+
+endpoint = "http://127.0.0.1:8000/api/customers/"
+
+#get_response = requests.post(endpoint, json={"title": "Hello"})
+#print(get_response.status_code)
+#print(get_response.json())
+
+get_response = requests.post((endpoint))
+print(get_response.json())
